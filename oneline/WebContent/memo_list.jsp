@@ -31,7 +31,11 @@
 	rs.close();
 	pstmt.close();
 	con.close();
-	out.println("DB조회 성공");
+	out.println("DB조회 성공<br>");
+	
 %>
+<form action="memo01.html">
+	<input type="submit" value="작성">
+</form>
 </body>
 </html>
