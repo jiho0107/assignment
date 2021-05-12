@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>한 줄 메모장</title>
+	<style>
+		#blank {
+			border: 2px solid black;
+			width: 300px;
+			height: 20px;
+		}
+		#enter {
+			margin-top: 30px;
+			margin-left: 20px;
+		}
+		#sub:hover {
+			background-color: yellow;
+		}
+		#sen:hover {
+			font-weight: bold; 
+		}
+		#rm {
+			background-color: blue;
+			color: white;
+		}
+		#rm:hover {
+			background-color: red;
+		}
+		p:first-of-type {
+			margin-top : 30px;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="oneline_proc.jsp">
+		<div id="enter">
+			<input type="text" id="blank" placeholder="메모를 입력하세요" required>
+			<input type="submit" value="등록" id="sub">
+		</div>
+		<p>
+		<span id="sen">(4/28 15:05) 오늘은 벌써 수요일이다. </span>
+		<input type="button" value="X" id="rm">
+		</p>
+		<p>
+		<span id="sen">(4/28 17:20) 알바 가기 싫다..ㅠ </span>
+		<input type="button" value="X" id="rm">
+		</p>
+		<p>
+		<span id="sen">(4/28 21:30) 너무 어렵다 젠장 </span>
+		<input type="button" value="X" id="rm">
+		</p>
+	</form>
+</body>
+</html>
